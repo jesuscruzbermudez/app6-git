@@ -1,27 +1,28 @@
-//JavaScript Document
+// JavaScript Document
 
 $(document).ready(function(e){
-    document.addEventListener("deviceready",function(){
-		
-		$('#izquierda').on("swipeleft",function(){
-			navigator .notification. alert("Deslizo a la izquierda",function(){"Aplicacion ","Aceptar"});
-});
+	document.addEventListener("deviceready",function(){
 
-$('#derecha').on("swiperight",function(){
-	navigator .notification. confirm ("¿Que quieres hacer?",function(opt){
+	$('#Izquierda').on("swipeleft",function(){
+	navigator .notification. alert("Deslizo a la Izquierda",function(){"aplicacion ","aceptar"});
+	});
+
+$('#Derecha').on("swiperight",function(){
+	navigator .notification. confirm("¿Que quieres hacer?",function(opt){
 		switch(opt)
 		{
 			case 1:
 			navigator.notification.beep(1);
 			break;
-			
+
 			case 2:
 			navigator.notification.vibrate(1000);
 			break;
 		}
-	}."Aplicaion "Beep,Vibrar,Cancelar");
+	},"aplicacion ","beep,vibrar,cancelar");
+
+	});	
+	},false);
 	
-});
-	}.false);
-});
+});//document
 		
